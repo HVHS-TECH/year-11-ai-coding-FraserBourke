@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My AI game</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>Flappy Shark</title>
+	<style>
+		html,body{height:100%;margin:0;font-family:Arial,Helvetica,sans-serif;background:#87CEEB}
+		.wrap{height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column}
+		canvas{background:transparent;display:block;box-shadow:0 6px 20px rgba(0,0,0,0.2)}
+		h1{margin:18px 0 8px;color:#034f84}
+		p{margin:6px 0;color:#03395e}
+	</style>
 </head>
 <body>
+	<div class="wrap">
+		<h1>Flappy Shark</h1>
+		<p>Click or press Space to swim up — dodge the green pipes!</p>
+		<canvas id="game" width="480" height="640"></canvas>
+	</div>
 
-<h1>AI game goes here</h1>
-
-
-
-<script src="game.js"></script>
+	<script src="game.js"></script>
 </body>
 </html>
 
